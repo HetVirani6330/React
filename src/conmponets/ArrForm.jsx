@@ -13,6 +13,7 @@ export default function ArrForm() {
       name, email, checkbox,radio
     }
 
+
     setArrForm([...arrForm,obj])
     console.log(arrForm);
 
@@ -72,10 +73,12 @@ export default function ArrForm() {
       {
         arrForm.map((i,index)=>(
           <div key={index}>
+            <br />
             <p>name : {i.name}</p>
             <p>Email : {i.email}</p>
             <p>Checkbox : {i.checkbox ?"checked" : "Unchecked"}</p>
             <p>Gender : {i.radio}</p>
+            <br />
             <hr />
 
           </div>
@@ -84,3 +87,4 @@ export default function ArrForm() {
     </>
   )
 }
+         
